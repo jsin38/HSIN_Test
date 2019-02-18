@@ -1,0 +1,80 @@
+{
+  "id": "56de8ab4-54fb-4fee-8802-a02953a7ee49",
+  "version": "2.0",
+  "name": "testproject",
+  "url": "https://www.seleniumhq.org",
+  "tests": [{
+    "id": "9e288c01-4a80-4c25-86cd-bc1d840a7cf9",
+    "name": "testproject",
+    "commands": [{
+      "id": "9340617d-6443-4404-8412-294a60c1f217",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0ed2546-b98a-4b45-8b3e-ef0ace3c24c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "978x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4367c320-440c-443b-8aba-f2f2c304d9b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projects",
+      "targets": [
+        ["linkText=Projects", "linkText"],
+        ["css=#menu_projects > a", "css:finder"],
+        ["css=a[title=\"Selenium Projects\"]", "css"],
+        ["xpath=//a[contains(text(),'Projects')]", "xpath:link"],
+        ["xpath=//li[@id='menu_projects']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "117a66c5-3326-4837-9408-5245b26a9497",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=#menu_download > a", "css:finder"],
+        ["css=a[title=\"Get Selenium\"]", "css"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//li[@id='menu_download']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "611eed91-c722-420d-8cc8-a87b4ed37db1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Documentation",
+      "targets": [
+        ["linkText=Documentation", "linkText"],
+        ["css=#menu_documentation > a", "css:finder"],
+        ["css=a[title=\"Technical references and guides\"]", "css"],
+        ["xpath=//a[contains(text(),'Documentation')]", "xpath:link"],
+        ["xpath=//li[@id='menu_documentation']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/docs/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b763451e-052d-43c6-accb-831fdd5cf7f7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e288c01-4a80-4c25-86cd-bc1d840a7cf9"]
+  }],
+  "urls": ["https://www.seleniumhq.org/"],
+  "plugins": []
+}
